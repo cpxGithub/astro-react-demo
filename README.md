@@ -11,3 +11,14 @@ npm create astro@latest -- --template framework-react
 This example showcases Astro working with [React](https://react.dev).
 
 Write your React components as `.jsx` or `.tsx` files in your project.
+
+### 其他
+
+eslint-config-prettier修复 Prettier 和 ESLint 冲突
+使用Prettier规则覆盖eslint规则
+
+eslint顺序
+eslint-js
+typescript
+
+prettier
