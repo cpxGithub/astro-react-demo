@@ -22,7 +22,6 @@
     "*.{css,less,scss}": "stylelint --fix",
     "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write"
   },
-  "prettier": "prettier-config-ali",
   "stylelint": {
     "extends": [
       "stylelint-config-ali",
