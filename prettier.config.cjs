@@ -3,6 +3,21 @@
  * @type {import("prettier").Config}
  */
 module.exports = {
-  plugins: ['prettier-config-ali'],
+  pluginSearchDirs: [__dirname],
+  plugins: [require.resolve('prettier-config-ali'), require.resolve('prettier-plugin-astro')],
+  overrides: [
+    {
+      files: '*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
+  ],
+  semi: true,
+  // singleQuote: true,
+  // printWidth: 120,
+  tabWidth: 2,
+  useTabs: false,
+  // plugins: ['prettier-config-ali'],
   // singleQuote: true,
 };

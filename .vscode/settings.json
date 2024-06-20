@@ -1,5 +1,5 @@
 {
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
   "stylelint.validate": ["css", "scss", "less"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -9,6 +9,10 @@
   "editor.rulers": [100],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

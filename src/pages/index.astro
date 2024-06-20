@@ -1,21 +1,24 @@
 ---
 // Component Imports
+import { check } from '@astrojs/check';
 import Counter from '../components/Counter';
+
 const someProps = {
-  count: 0
+  count: 0,
 };
-const name ="as"
+console.log(check);
+const name = 'as';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta name='viewport' content='width=device-width' />
-    <meta name='generator' content={Astro.generator} />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="{Astro.generator}" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <style>
       html,
       body {
@@ -29,6 +32,7 @@ const name ="as"
   </head>
   <body>
     <main>
+      <a href="#">aa</a>
       <Counter {...someProps} client:visible>
         <h1>Hello, React!</h1>
       </Counter>
